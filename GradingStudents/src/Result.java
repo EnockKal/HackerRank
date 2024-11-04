@@ -15,18 +15,18 @@ class Result {
 
     public static List<Integer> gradingStudents(List<Integer> grades) {
         // Write your code here
-        List<Integer> newList = new ArrayList<>();
+        List<Integer> newGrades = new ArrayList<>();
 
-        for(int num : grades){
-            int multipleOfFive = (num + 4) / 5 * 5;
-            if(num >= 38){
-                if((multipleOfFive - num) < 3){
-                    num = multipleOfFive;
+        for(int grade : grades){
+            int multipleOfFive = (grade + 4) / 5 * 5;
+            if(grade >= 38){
+                if((multipleOfFive - grade) < 3){
+                    grade = multipleOfFive;
                 }
             }
-            newList.add(num);
+            newGrades.add(grade);
         }
-        return newList;
+        return newGrades;
 
     }
 
