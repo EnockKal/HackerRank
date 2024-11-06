@@ -30,6 +30,7 @@ class Result {
         }else if(hour != 12){
             hour += 12;
         }
+
         return String.format("%02d:%s:%s", hour, min, second);
     }
 
