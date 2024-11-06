@@ -27,7 +27,6 @@ class Result {
             newGrades.add(grade);
         }
         return newGrades;
-
     }
 
 }
