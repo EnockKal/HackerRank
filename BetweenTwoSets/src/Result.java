@@ -29,7 +29,7 @@ class Result {
         int result = arr.get(0);
         for (int num : arr) {
             result = gcd(result, num);
-            if (result == 1) { // Early exit if GCD is 1
+            if (result == 1) {
                 break;
             }
         }
